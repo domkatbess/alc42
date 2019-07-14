@@ -1,157 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ProfileActivity"
-    tools:showIn="@layout/activity_profile">
+    android:fillViewport="true">
 
-    <ImageView
-        android:id="@+id/imageview_profileimg"
-        android:layout_width="374dp"
-        android:layout_height="292dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:contentDescription="my photo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/android_batman" />
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".ProfileActivity"
+        tools:showIn="@layout/activity_profile">
 
-    <TextView
-        android:id="@+id/textview_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:text="TextView"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageview_profileimg"
-        app:layout_constraintStart_toStartOf="@+id/imageview_profileimg"
-        app:layout_constraintTop_toBottomOf="@+id/imageview_profileimg" />
+        <ImageView
+            android:id="@+id/imageview_profileimg"
+            android:layout_width="374dp"
+            android:layout_height="292dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="my photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/android_batman" />
 
-    <TextView
-        android:id="@+id/textview_track_label"
-        android:layout_width="99dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="Track"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/imageview_profileimg"
-        app:layout_constraintTop_toBottomOf="@+id/textview_name" />
+        <TextView
+            android:id="@+id/textview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageview_profileimg"
+            app:layout_constraintStart_toStartOf="@+id/imageview_profileimg"
+            app:layout_constraintTop_toBottomOf="@+id/imageview_profileimg" />
 
-    <TextView
-        android:id="@+id/textview_country_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Country"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textview_track_label"
-        app:layout_constraintTop_toBottomOf="@+id/textview_track_label" />
+        <TextView
+            android:id="@+id/textview_track_label"
+            android:layout_width="99dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="Track"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/imageview_profileimg"
+            app:layout_constraintTop_toBottomOf="@+id/textview_name" />
 
-    <TextView
-        android:id="@+id/textview_email_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Email"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textview_country_label"
-        app:layout_constraintTop_toBottomOf="@+id/textview_country_label" />
+        <TextView
+            android:id="@+id/textview_country_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Country"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/textview_track_label"
+            app:layout_constraintTop_toBottomOf="@+id/textview_track_label" />
 
-    <TextView
-        android:id="@+id/textview_phone_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Phone Num"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textview_email_label"
-        app:layout_constraintTop_toBottomOf="@+id/textview_email_label" />
+        <TextView
+            android:id="@+id/textview_email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Email"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/textview_country_label"
+            app:layout_constraintTop_toBottomOf="@+id/textview_country_label" />
 
-    <TextView
-        android:id="@+id/textview_slack_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="13dp"
-        android:text="Slack Username"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textview_phone_label"
-        app:layout_constraintTop_toBottomOf="@+id/textview_phone_label"
-        app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/textview_phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Phone Num"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/textview_email_label"
+            app:layout_constraintTop_toBottomOf="@+id/textview_email_label" />
 
-    <TextView
-        android:id="@+id/textview_track"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageview_profileimg"
-        app:layout_constraintHorizontal_bias="0.73"
-        app:layout_constraintStart_toEndOf="@+id/textview_track_label"
-        app:layout_constraintTop_toBottomOf="@+id/textview_name" />
+        <TextView
+            android:id="@+id/textview_slack_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="13dp"
+            android:text="Slack Username"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textview_phone_label"
+            app:layout_constraintTop_toBottomOf="@+id/textview_phone_label"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textview_country"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textview_track"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textview_country_label"
-        app:layout_constraintTop_toBottomOf="@+id/textview_track" />
+        <TextView
+            android:id="@+id/textview_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageview_profileimg"
+            app:layout_constraintHorizontal_bias="0.73"
+            app:layout_constraintStart_toEndOf="@+id/textview_track_label"
+            app:layout_constraintTop_toBottomOf="@+id/textview_name" />
 
-    <TextView
-        android:id="@+id/textview_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textview_country"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textview_email_label"
-        app:layout_constraintTop_toBottomOf="@+id/textview_country" />
+        <TextView
+            android:id="@+id/textview_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textview_track"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textview_country_label"
+            app:layout_constraintTop_toBottomOf="@+id/textview_track" />
 
-    <TextView
-        android:id="@+id/textview_phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textview_email"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textview_phone_label"
-        app:layout_constraintTop_toBottomOf="@+id/textview_email" />
+        <TextView
+            android:id="@+id/textview_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textview_country"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textview_email_label"
+            app:layout_constraintTop_toBottomOf="@+id/textview_country" />
 
-    <TextView
-        android:id="@+id/textview_slack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textview_phone"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textview_slack_label"
-        app:layout_constraintTop_toBottomOf="@+id/textview_phone" />
+        <TextView
+            android:id="@+id/textview_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textview_email"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textview_phone_label"
+            app:layout_constraintTop_toBottomOf="@+id/textview_email" />
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/textview_slack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textview_phone"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textview_slack_label"
+            app:layout_constraintTop_toBottomOf="@+id/textview_phone" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
